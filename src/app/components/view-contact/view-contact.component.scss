@@ -1,0 +1,25 @@
+.page-body{
+  // padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image {
+  text-align: center;
+  img{
+    border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  }
+}
+.card {
+  width: 75%;
+  padding: 20px 40px;
+  .input{
+    margin-bottom: 15px;
+  }
+}
+

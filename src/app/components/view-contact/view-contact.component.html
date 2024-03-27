@@ -1,0 +1,87 @@
+<div class="container ">
+  <div class="page-body">
+    <!-- Form Section -->
+    <div class="card" *ngIf="!isFetching">
+      <div class="image mw-100">
+        <img
+          class="img-fluid"
+          [src]="contactData.avatar"
+          alt="assets"
+          width="125"
+          height="125"
+        />
+      </div>
+      <div class="row">
+        <form>
+          <div class="input">
+            <label for="ID" class="form-label"
+              >ID:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="ID"
+              name="firstName"
+              [(ngModel)]="contactData.id"
+              disabled
+              />
+          </div>
+          <div class="input">
+            <label for="Fname" class="form-label"
+              >First Name:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="Fname"
+              name="firstName"
+              [(ngModel)]="contactData.first_name"
+              disabled
+              />
+          </div>
+          <div class="input">
+            <label for="lName" class="form-label"
+              >Last Name:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="lName"
+              name="lastName"
+              [(ngModel)]="contactData.last_name"
+              disabled
+              />
+          </div>
+          <div class="input">
+            <label for="Email" class="form-label"
+              >Email:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="Email"
+              name="email"
+              [(ngModel)]="contactData.email"
+              disabled=""
+              />
+          </div>
+        
+
+          <div class="text-center">
+
+            <button
+              type="button"
+              class="btn btn-success"
+              routerLink="/users"
+            >
+              Back
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-loader *ngIf="isFetching" />

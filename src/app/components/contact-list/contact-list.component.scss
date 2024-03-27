@@ -1,0 +1,37 @@
+.navbar input {
+  width: 100px;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+}
+.navbar input:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 18px 0 dodgerBlue;
+}
+figure {
+  overflow-x: auto;
+}
+.mat-elevation-z8 {
+  overflow-x: auto;
+}
+td fa-icon {
+  cursor: pointer;
+  color: gold;
+}
+
+.page-body {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .form-outline {
+    width: 350px;
+    overflow-x: auto;
+  }
+}
